@@ -1,13 +1,531 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Sen:wght@400;700&family=Source+Sans+Pro:wght@600;900&family=Space+Grotesk:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Sen:wght@400;700&family=Source+Sans+Pro:wght@600;900&family=Space+Grotesk:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@400;500;600;700&family=Jost:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,700&family=Sen:wght@400;700&family=Source+Sans+Pro:wght@600;900&family=Space+Grotesk:wght@300;700&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+ul li a:hover {
+  color: #FBB034 !important;
+}
+
+
+
+.navbutton:hover {
+  color: #FFFFFF !important;
+}
+.bg_hero{
+  background-image: url(../src/assets/image/png/hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav_3_line {
+  background-color: red;
+  padding: 3px 18px;
+  margin-top: 3px;
+  border-radius: 10px;
+  z-index: 3;
+
+}
+
+.navbutton {
+  padding: 18px 53px;
+  background: #FBB034;
+}
+.navbutton:hover {
+background-color: orangered;
+}
+
+.allsevicesbutton {
+  border: 1px solid #FFFFFF;
+  padding: 18px 46px;
+}
+.allsevicesbutton:hover {
+background-color: red;
+}
+
+.aboutus_bg {
+  background-image: url(../src/assets/image/png/best-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.text_line_efect::after {
+  content: '';
+  position: absolute;
+  background: #F66F4D;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s linear;
+}
+
+.text_line_efect:hover:after {
+  width: 80%;
+
+
+}
+
+.hover:hover {
+  color: red;
+}
+
+.img_translate :hover {
+  transform: translateY(-50%);
+  transition: all 1s linear;
+
+}
+
+.booknow_bg {
+  background-image: url(../src/assets/image/png/book_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.BookAppointment_btn {
+  background: #FBB034;
+  padding: 18px 53px;
+}
+.BookAppointment_btn:hover {
+background-color: #F66F4D;
+}
+
+
+.line_height_1 {
+  line-height: 1;
+}
+
+.bg_white {
+  background: #FFFFFF;
+  width: 320px;
+  height: 283px;
+}
+
+.call_now {
+  background: #E8E8E8;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.bg_yellow {
+  background: #FBB034;
+  max-height: 1134px;
+}
+
+.black_hr {
+  border: 1px dashed #000000;
+  max-width: 367px;
+  height: 0px;
+  opacity: 1;
+}
+
+.width_360 {
+  max-width: 360px;
+}
+
+.book_now_btn {
+  border: 1px solid #000000;
+  padding: 10px 48px;
+}
+
+.m_right_25 {
+  margin-right: -25px !important;
+}
+
+.give_reviews_btn {
+  background: #FBB034;
+  padding: 18px 55px;
+}
+.give_reviews_btn:hover {
+background-color: orangered;
+}
+
+.white_box {
+  background: #FFFFFF;
+  box-shadow: 9px 25px 10px rgba(0, 0, 0, 0.01), 5px 14px 9px rgba(0, 0, 0, 0.05), 2px 6px 6px rgba(0, 0, 0, 0.09), 1px 2px 4px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-radius: 0px;
+}
+
+.bg_partner {
+  background-image: url(./assets/image/png/partner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.partner_btn {
+  border: 1px solid #FBB034;
+  padding: 17px 41px;
+}
+.partner_btn:hover {
+background-color: #F66F4D;
+}
+.partner_btn:hover{
+ color: white;
+}
+
+.get_started_btn {
+  background: #FBB034;
+  border-radius: 8px;
+  padding: 14px 41px;
+}
+.get_started_btn:hover {
+background-color: #F66F4D;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.border_1 {
+  border-bottom: 1px solid #FFFFFF;
+  width: 300px !important;
+  mix-blend-mode: normal;
+  color: white !important;
+}
+
+.box_1 {
+  background-color: black;
+  border: none;
+  outline: none;
+  width: 300px;
+  color: white !important;
+}
+
+.box {
+  background: #FBB034;
+  border-radius: 8px 8px 0px 0px;
+  padding: 13px 20px;
+}
+
+.working_clr {
+  color: rgba(236, 236, 236, 0.1);
+  top: 73px;
+  left: 61%;
+}
+
+.testimonals {
+  left: 10.5%;
+  top: 6%;
+}
+
+.arrow_img {
+  top: 32%;
+  right: 63%;
+}
+
+.arrow_img_1 {
+  top: 30%;
+  right: 15%;
+}
+
+.haircut {
+  top: 57%;
+  left: 71%;
+}
+
+.divider {
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  height: 1px;
+  max-width: 1068px;
+  border-radius: 0px;
+}
+
+.z-index {
+  z-index: -1;
+}
+/* .....................font_family.................. */
+
+.ff_Poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.ff_dm_sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ff_Jost {
+  font-family: 'Jost', sans-serif;
+}
+
+/* root */
+
+:root {
+  /* font_size */
+  --fs-64: 64px;
+  --fs-48: 48px;
+  --fs-36: 36px;
+  --fs-32: 32px;
+  --fs-24: 24px;
+  --fs-22: 22px;
+  --fs-21: 21px;
+  --fs-20: 20px;
+  --fs-18: 18px;
+  --fs-17: 17px;
+  --fs-16: 16px;
+  --fs-15: 15px;
+  --fs-13: 13px;
+  --fs-12: 12px;
+
+  /* color */
+
+  --color-black: #000000;
+  --color-yellow: #FBB034;
+  --color-white: #FFFFFF;
+  --color-lightwhite: #E8E8E8;
+  --color-grey: #9A9A9A;
+  --color-grey2: #ABABAB;
+  --color-darkgrey: #565656;
+  --color-darkgrey1: #B8B8B8;
+  --color-darkgrey2: #C2C2C2;
+  --color-darkgrey3: #ECECEC;
+
+}
+
+/* color */
+.black {
+  color: var(--color-black) !important;
+}
+
+.yellow {
+  color: var(--color-yellow);
+}
+
+.white {
+  color: var(--color-white) !important;
+}
+
+.lightwhite {
+  color: var(--color-lightwhite);
+}
+
+.grey {
+  color: var(--color-grey);
+}
+
+.grey2 {
+  color: var(--color-grey2);
+}
+
+.darkgrey {
+  color: var(--color-darkgrey);
+}
+
+.darkgrey1 {
+  color: var(--color-darkgrey1);
+}
+
+.darkgrey2 {
+  color: var(--color-darkgrey2);
+}
+
+.darkgrey3 {
+  color: var(--color-darkgrey3);
+}
+
+/* bg */
+
+.black_bg {
+  background: var(--color-black);
+}
+
+/* font_size */
+.fs_64 {
+  font-size: var(--fs-64);
+}
+
+.fs_48 {
+  font-size: var(--fs-48);
+}
+
+.fs_36 {
+  font-size: var(--fs-36);
+}
+
+.fs_32 {
+  font-size: var(--fs-32);
+}
+
+.fs_24 {
+  font-size: var(--fs-24);
+}
+
+.fs_22 {
+  font-size: var(--fs-22);
+}
+
+.fs_21 {
+  font-size: var(--fs-21);
+}
+
+.fs_20 {
+  font-size: var(--fs-20);
+}
+
+.fs_18 {
+  font-size: var(--fs-18);
+}
+
+.fs_17 {
+  font-size: var(--fs-17);
+}
+
+.fs_16 {
+  font-size: var(--fs-16);
+}
+
+.fs_15 {
+  font-size: var(--fs-15);
+}
+
+.fs_13 {
+  font-size: var(--fs-13);
+}
+
+.fs_12 {
+  font-size: var(--fs-12);
+}
+
+
+/* font-weight */
+
+.fw_700 {
+  font-weight: 700;
+}
+
+.fw_500 {
+  font-weight: 500;
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+@media (min-width:1200px) {
+  .width_389 {
+    max-width: 389px;
+  }
+
+  .width_401 {
+    max-width: 401px;
+  }
+
+  .width_451 {
+    max-width: 451px;
+  }
+
+  .width_586 {
+    max-width: 586px;
+  }
+
+  .width_339 {
+    max-width: 339px;
+  }
+
+  .width_419 {
+    max-width: 419px;
+  }
+
+
+
+  .width_256 {
+    max-width: 256px;
+  }
+
+  .width_566 {
+    max-width: 566px;
+  }
+
+  .width_165 {
+    max-width: 165px;
+  }
+}
+
+@media (max-width:992px) {
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    transition: 0.9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+ 
+
+
+  }
+
+  #check:checked~.nav_left {
+    left: 0;
+  }
+
+
+
+}
+
+@media (max-width:1200px) {
+
+  :root {
+    /* font_size */
+    --fs-64: 60px;
+    --fs-48: 40px;
+    --fs-36: 36px;
+    --fs-32: 28px;
+    --fs-24: 20px;
+    --fs-22: 20px;
+    --fs-21: 19px;
+    --fs-20: 18px;
+    --fs-18: 16px;
+    --fs-17: 15px;
+    --fs-16: 14px;
+    --fs-15: 14px;
+    --fs-13: 12px;
+    --fs-12: 12px;
+
+
+  }
+}
+
+@media (max-width:992px) {
+
+  :root {
+    /* font_size */
+    --fs-64: 55px;
+    --fs-48: 25px;
+    --fs-36: 25px;
+    --fs-32: 26px;
+    --fs-24: 18px;
+    --fs-22: 19px;
+    --fs-21: 18px;
+    --fs-20: 17px;
+    --fs-18: 16px;
+    --fs-17: 14px;
+    --fs-16: 13px;
+    --fs-15: 12px;
+    --fs-13: 11px;
+    --fs-12: 12px;
+
+
+  }
 }
