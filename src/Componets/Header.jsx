@@ -20,7 +20,7 @@ const Header = () => {
                 <p className='fw_400 ff_Poppins fs_21 grey width_389 '>Choppers offers high performance customized facials to provide you with visible results.</p>
                 <div className='  d-flex mb-0 mt-5 py-5 align-items-start  align-items-sm-center  flex-column  flex-sm-row'>
                   <FirstBtn any_text="Book Now" />
-                  <a className='allsevicesbutton ms-sm-5 fw_700 fs_15 ff_poppins text-white d-inline-block mt-5 mt-sm-0' href="#">All Services</a>
+                  <a className='allsevicesbutton ms-sm-5 fw_700 fs_15 ff_poppins text-white d-inline-block mt-5 mt-lg-0' href="#">All Services</a>
                 </div>
               </Col>
               <Col xs={12} lg={6}>
